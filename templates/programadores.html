@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Restaurante La Delicia</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .team-section {
+        padding: 60px 0;
+    }
+
+    .team-member {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .team-member img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .special-thanks {
+        background-color: #343a40;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .special-thanks h2 {
+        margin-bottom: 20px;
+    }
+
+    .special-thanks p {
+        font-size: 1.2rem;
+    }
+
+    .special-thanks {
+        background: url('../img/integrantes/docente.jpg') no-repeat center center;
+        background-size: cover;
+        padding: 50px;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* Coloca el contenido al final del contenedor */
+        align-items: center;
+        position: relative;
+    }
+
+
+    /* Estilo básico para la barra de navegación */
+    nav.navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        /* Asegura que esté por encima del resto del contenido */
+        transition: top 0.3s;
+        /* Agrega una transición suave para una apariencia más agradable */
+    }
+
+    /* Estilo para ocultar la barra de navegación cuando se desplaza hacia abajo */
+    .navbar.hidden {
+        top: -70px;
+        /* Altura de la barra de navegación */
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html"><i class="fas fa-laptop-code"></i>DSW11A</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="..\index.html"> <i class="fas fa-home"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html"><i class="fas fa-book-open"></i> Menú</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario.html"><i class="fas fa-file-alt"></i> Formulario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tapas.html"><i class="fas fa-wine-glass-alt"></i> Tapas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mexicano.html"><i class="fas fa-utensils"></i> Comidas Mexicanas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="conocenos.html"><i class="fas fa-users"></i> Nosotros</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-user-cog"></i> Programadores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container team-section">
+        <h1 class="text-center mb-5">Nuestro Equipo de Programadores</h1>
+        <div class="row">
+            <div class="col-md-4 team-member">
+                <img src="../img/integrantes/alegria.jpg" alt="Programador 1">
+                <h3>Kevin Daniel Alegria</h3>
+                <p>Desarrollador</p>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="../img/integrantes/guidos.jpg" alt="Programador 2">
+                <h3>Jose Eduardo Guidos</h3>
+                <p>Depurador</p>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="../img/integrantes/adan.jpg" alt="Programador 3">
+                <h3>Michael Adan Barrera</h3>
+                <p>Analista</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="special-thanks">
+        <div class="col-md-12 team-member">
+
+        </div>
+        <div class="text-bottom">
+            <h2>Agradecimiento Especial</h2>
+            <p>Queremos expresar nuestro más sincero agradecimiento al lic. Heber Mijango por su apoyo constante. Su
+                visión y guía han sido fundamentales para el éxito de nuestro equipo. ¡Gracias por todo!</p>
+        </div>
+    </div>
+
+    <footer
+        style="background-color: #882fc3; color: white; text-align: center; font-size: 30px; font-family: 'Brush Script MT', cursive;">
+        Delicia 2024</footer>
+
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

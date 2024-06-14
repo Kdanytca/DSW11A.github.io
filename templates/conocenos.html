@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Restaurante La Delicia</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+    /* Estilo básico para la barra de navegación */
+    nav.navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        /* Asegura que esté por encima del resto del contenido */
+        transition: top 0.3s;
+        /* Agrega una transición suave para una apariencia más agradable */
+    }
+
+    /* Estilo para ocultar la barra de navegación cuando se desplaza hacia abajo */
+    .navbar.hidden {
+        top: -70px;
+        /* Altura de la barra de navegación */
+    }
+</style>
+
+<body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html"><i class="fas fa-laptop-code"></i>DSW11A</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html"> <i class="fas fa-home"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html"><i class="fas fa-book-open"></i> Menú</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario.html"><i class="fas fa-file-alt"></i> Formulario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tapas.html"><i class="fas fa-wine-glass-alt"></i> Tapas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mexicano.html"><i class="fas fa-utensils"></i> Comidas Mexicanas</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="conocenos.html"><i class="fas fa-users"></i> Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="programadores.html"><i class="fas fa-user-cog"></i> Programadores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html"> <i class="fas fa-envelope"></i> Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- Sección Ubicación -->
+    <section id="ubicacion" class="my-5">
+        <div class="container">
+            <h2 class="text-center">Nuestra Ubicación</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31009.976853309367!2d-89.20239636877189!3d13.703478238497315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63312cffdc0e23%3A0xfd208b3a87cfb4d9!2sMetrocentro%20San%20Salvador!5e0!3m2!1ses-419!2ssv!4v1718250784281!5m2!1ses-419!2ssv"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Eventos y Promociones -->
+    <section id="eventos" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Eventos y Promociones</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Noche de Tapas</h5>
+                            <p class="card-text">Únete a nosotros cada jueves para disfrutar de una selección especial
+                                de tapas y vinos.</p>
+                                <a href="tapas.html" type="submit" class="btn btn-success">Noche de Tapas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Descuento de Fin de Semana</h5>
+                            <p class="card-text">Obtén un 20% de descuento en tu cuenta final cada sábado y domingo.</p>
+                            <a href="mexicano.html" type="submit" class="btn btn-success">Fin de Semana</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Equipo del Restaurante -->
+    <section id="equipo" class="my-5">
+        <div class="container">
+            <h2 class="text-center">Conoce a Nuestro Equipo</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="../img/ch2.webp" class="card-img-top" alt="Chef 1" height="235px">
+                        <div class="card-body">
+                            <h5 class="card-title">Chef Ana Gómez</h5>
+                            <p class="card-text">Nuestra talentosa chef con más de 20 años de experiencia en cocina
+                                internacional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="../img/ch1.jpg" class="card-img-top" alt="Chef 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Chef Luis Fernández</h5>
+                            <p class="card-text">Especialista en cocina mediterránea y mariscos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="../img/ch3.jpg" class="card-img-top" alt="Chef 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Chef Carla Ruiz</h5>
+                            <p class="card-text">Experta en repostería y postres gourmet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section id="testimonios" class="my-5">
+        <div class="container">
+            <h2 class="text-center">Testimonios de Nuestros Clientes</h2>
+            <div class="row">
+                <div class="col-md-4 testimonial">
+                    <img src="../img/u2.jpg" alt="Juan Pérez" width="300px" height="200px">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">La mejor experiencia culinaria que he tenido. Los sabores son excepcionales.</p>
+                        <footer class="blockquote-footer">Juan Pérez</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 testimonial">
+                    <img src="../img/u1.webp" alt="María López" width="300px" height="200px">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Un ambiente acogedor y un servicio impecable. ¡Volveré sin duda!</p>
+                        <footer class="blockquote-footer">María López</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 testimonial">
+                    <img src="../img/u3.jpg" alt="Carlos Martínez" width="300px" height="200px">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">La calidad de los ingredientes se nota en cada bocado. Altamente recomendado.
+                        </p>
+                        <footer class="blockquote-footer">Carlos Martínez</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color: #882fc3; color: white; text-align: center; font-size: 30px; font-family: 'Brush Script MT', cursive;" >Delicia 2024</footer>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <script src="tabla.js"></script>
+</body>
+
+</html>

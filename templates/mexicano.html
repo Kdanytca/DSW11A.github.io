@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platos Mexicanos de Fin de Semana</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/tapas.css">
+    <style>
+        .card {
+            perspective: 1000px;
+            margin-bottom: 400px;
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .card-front,
+        .card-back {
+            position: absolute;
+            width: 100%;
+            backface-visibility: hidden;
+        }
+
+        .card-back {
+            background: #f8f9fa;
+            transform: rotateY(180deg);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Estilo básico para la barra de navegación */
+        nav.navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            /* Asegura que esté por encima del resto del contenido */
+            transition: top 0.3s;
+            /* Agrega una transición suave para una apariencia más agradable */
+        }
+
+        /* Estilo para ocultar la barra de navegación cuando se desplaza hacia abajo */
+        .navbar.hidden {
+            top: -70px;
+            /* Altura de la barra de navegación */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html"><i class="fas fa-laptop-code"></i>DSW11A</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="..\index.html"> <i class="fas fa-home"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html"><i class="fas fa-book-open"></i> Menú</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario.html"><i class="fas fa-file-alt"></i> Formulario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tapas.html"><i class="fas fa-wine-glass-alt"></i> Tapas</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-utensils"></i> Comidas Mexicanas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="conocenos.html"><i class="fas fa-users"></i> Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="programadores.html"><i class="fas fa-user-cog"></i> Programadores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-5">Platos Mexicanos de Fin de Semana</h1>
+        <img src="../img/m.jpg" alt="">
+        <div class="row">
+            <!-- El Mole -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="../img/m/1.avif" class="card-img-top" alt="El Mole">
+                            <div class="card-body">
+                                <h5 class="card-title">El Mole</h5>
+                                <p class="card-text">Una salsa rica y espesa, tradicionalmente hecha con una mezcla de
+                                    chiles y chocolate.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingredientes</h5>
+                                <ul>
+                                    <li>Chiles secos</li>
+                                    <li>Chocolate</li>
+                                    <li>Especias</li>
+                                    <li>Pollo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- El Pozole -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="../img/m/2.webp" class="card-img-top" alt="El Pozole">
+                            <div class="card-body">
+                                <h5 class="card-title">El Pozole</h5>
+                                <p class="card-text">Un caldo hecho a base de maíz, carne y acompañado con verduras.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingredientes</h5>
+                                <ul>
+                                    <li>Maíz cacahuazintle</li>
+                                    <li>Carne de cerdo</li>
+                                    <li>Lechuga</li>
+                                    <li>Rábano</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cochinita Pibil -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="../img/m/3.webp" class="card-img-top" alt="Cochinita Pibil">
+                            <div class="card-body">
+                                <h5 class="card-title">Cochinita Pibil</h5>
+                                <p class="card-text">Carne de cerdo marinada en achiote, cocida en hoja de plátano.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingredientes</h5>
+                                <ul>
+                                    <li>Cerdo</li>
+                                    <li>Achiote</li>
+                                    <li>Naranja agria</li>
+                                    <li>Hoja de plátano</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Chiles en Nogada -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="../img/m/4.webp" class="card-img-top" alt="Chiles en Nogada">
+                            <div class="card-body">
+                                <h5 class="card-title">Chiles en Nogada</h5>
+                                <p class="card-text">Chiles rellenos cubiertos con una salsa de nuez y granada.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingredientes</h5>
+                                <ul>
+                                    <li>Chiles poblanos</li>
+                                    <li>Carne picada</li>
+                                    <li>Nuez de castilla</li>
+                                    <li>Granada</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Barbacoa -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="../img/m/5.webp" class="card-img-top" alt="Barbacoa">
+                            <div class="card-body">
+                                <h5 class="card-title">Barbacoa</h5>
+                                <p class="card-text">Carne cocida al vapor en un horno de tierra.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingredientes</h5>
+                                <ul>
+                                    <li>Carne de res</li>
+                                    <li>Especias</li>
+                                    <li>Hoja de maguey</li>
+                                    <li>Chiles secos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carnitas -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="../img/m/6.avif" class="card-img-top" alt="Carnitas">
+                            <div class="card-body">
+                                <h5 class="card-title">Carnitas</h5>
+                                <p class="card-text">Carne de cerdo cocida lentamente en su propia grasa.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingredientes</h5>
+                                <ul>
+                                    <li>Cerdo</li>
+                                    <li>Especias</li>
+                                    <li>Sal</li>
+                                    <li>Grasa de cerdo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pescado a la talla -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="../img/m/7.webp" class="card-img-top" alt="Pescado a la Talla">
+                            <div class="card-body">
+                                <h5 class="card-title">Pescado a la Talla</h5>
+                                <p class="card-text">Pescado marinado y asado a la parrilla.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingredientes</h5>
+                                <ul>
+                                    <li>Pescado</li>
+                                    <li>Chiles</li>
+                                    <li>Especias</li>
+                                    <li>Limón</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pescado a la Veracruzana -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="../img/m/8.avif" class="card-img-top" alt="Pescado a la Veracruzana">
+                            <div class="card-body">
+                                <h5 class="card-title">Pescado a la Veracruzana</h5>
+                                <p class="card-text">Pescado cocido en una salsa de tomate con aceitunas y alcaparras.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingredientes</h5>
+                                <ul>
+                                    <li>Pescado</li>
+                                    <li>Tomate</li>
+                                    <li>Aceitunas</li>
+                                    <li>Alcaparras</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tlayudas -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="../img/m/9.avif" class="card-img-top" alt="Tlayudas">
+                            <div class="card-body">
+                                <h5 class="card-title">Tlayudas</h5>
+                                <p class="card-text">Tortilla grande y crujiente cubierta con frijoles, carne y queso.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingredientes</h5>
+                                <ul>
+                                    <li>Tortilla de maíz</li>
+                                    <li>Frijoles</li>
+                                    <li>Carne asada</li>
+                                    <li>Queso Oaxaca</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tacos -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="../img/m/10.webp" class="card-img-top" alt="Tacos">
+                            <div class="card-body">
+                                <h5 class="card-title">Tacos</h5>
+                                <p class="card-text">Tortillas rellenas de carne, verduras y salsas.</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingredientes</h5>
+                                <ul>
+                                    <li>Tortillas de maíz</li>
+                                    <li>Carne de res o pollo</li>
+                                    <li>Cebolla</li>
+                                    <li>Cilantro</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #882fc3; color: white; text-align: center; font-size: 30px; font-family: 'Brush Script MT', cursive;" >Delicia 2024</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

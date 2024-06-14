@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noche de Tapas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/tapas.css">
+</head>
+<style>
+            /* Estilo básico para la barra de navegación */
+            nav.navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* Asegura que esté por encima del resto del contenido */
+            transition: top 0.3s; /* Agrega una transición suave para una apariencia más agradable */
+        }
+
+        /* Estilo para ocultar la barra de navegación cuando se desplaza hacia abajo */
+        .navbar.hidden {
+            top: -70px; /* Altura de la barra de navegación */
+        }
+</style>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html"><i class="fas fa-laptop-code"></i>DSW11A</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="..\index.html"> <i class="fas fa-home"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html"><i class="fas fa-book-open"></i> Menú</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario.html"><i class="fas fa-file-alt"></i> Formulario</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-wine-glass-alt"></i> Tapas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mexicano.html"><i class="fas fa-utensils"></i> Comidas Mexicanas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="conocenos.html"><i class="fas fa-users"></i> Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="programadores.html"><i class="fas fa-user-cog"></i> Programadores</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner de vino en el lado izquierdo -->
+    <div class="wine-banner" style="left: 0;"></div>
+    <!-- Banner de vino en el lado derecho -->
+    <div class="wine-banner" style="right: 0;"></div>
+    <div class="container content">
+
+        <p class="lead">La "Noche de Tapas" es una experiencia culinaria que no querrás perderte. Ven y disfruta de una
+            selección especial de tapas, acompañadas por una excelente variedad de vinos seleccionados especialmente
+            para la ocasión.</p>
+
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OmzSmqzd-jI" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <h2 class="mb-4">Galería de Vinos</h2>
+            <div class="row">
+              <!-- Tarjeta 1 -->
+              <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card">
+                    <iframe width="254" height="205" src="https://www.youtube.com/embed/nzBVXkSFD10?si=d3RH8CIkYDyko46-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <div class="card-body">
+                    <p class="card-text">Tinto.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Tarjeta 2 -->
+              <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card">
+                    <iframe width="254" height="205" src="https://www.youtube.com/embed/zvPAslW63Jo?si=rx6uux2EfOJMHWIE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <div class="card-body">
+                    <p class="card-text">Rosmarinus.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Tarjeta 3 -->
+              <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card">
+                    <iframe width="254" height="205" src="https://www.youtube.com/embed/0UjmGQF0K04?si=qhHc_bRWRTFMZQZ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <div class="card-body">
+                    <p class="card-text">Kohlberg.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Tarjeta 4 -->
+              <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card">
+                    <iframe width="254" height="205" src="https://www.youtube.com/embed/NovdHxC72Gs?si=tKHeNPTd4c_WqkVF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <div class="card-body">
+                    <p class="card-text">Flia Ricci.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+    <footer style="background-color: #882fc3; color: white; text-align: center; font-size: 30px; font-family: 'Brush Script MT', cursive;" >Delicia 2024</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

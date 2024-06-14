@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Delicia</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        /* Estilos generales */
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-fluid {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilos para el banner */
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #882fc3;
+            /* Color de fondo del banner */
+            color: white;
+            text-align: center;
+            width: 30%;
+            /* Ancho del banner */
+            height: 650px;
+        }
+
+        .banner h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-family: 'Brush Script MT', cursive;
+            /* Aplicar la fuente al banner */
+        }
+
+        .banner p {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-family: 'Brush Script MT', cursive;
+            /* Aplicar la fuente al banner */
+        }
+
+        .banner .btn {
+            background-color: white;
+            color: #6c757d;
+            border: none;
+            /
+        }
+
+        .carousel-container {
+            flex: 1;
+            /* Hace que el carrusel ocupe todo el espacio restante */
+            overflow: hidden;
+        }
+
+        .carousel {
+            height: 100%;
+            /* Altura del carrusel */
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 650px;
+            object-fit: cover;
+        }
+
+        .container-section {
+            padding: 2rem 0;
+        }
+
+        .video-section {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-laptop-code"></i>DSW11A</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"> <i class="fas fa-home"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="templates/menu.html"><i class="fas fa-book-open"></i> Menú</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="templates/formulario.html"><i class="fas fa-file-alt"></i> Formulario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="templates/tapas.html"><i class="fas fa-wine-glass-alt"></i> Tapas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="templates/mexicano.html"><i class="fas fa-utensils"></i> Comidas Mexicanas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="templates/conocenos.html"><i class="fas fa-users"></i> Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="templates/programadores.html"><i class="fas fa-user-cog"></i> Programadores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="templates/contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <!-- Sección Banner y Carrusel -->
+    <div class="container-fluid p-0">
+        <div class="d-flex">
+            <!-- Banner -->
+            <div class="banner">
+                <div>
+                    <h1>La Delicia</h1>
+                    <p>Disfruta de las mejores comidas</p>
+                    <a href="templates/menu.html" class="btn btn-light"><i class="fas fa-book-open"></i> Menú</a>
+                </div>
+            </div>
+            <!-- Carrusel -->
+            <div class="carousel-container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/r1.jpg" class="d-block w-100" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/r2.jpg" class="d-block w-100" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/r3.webp" class="d-block w-100" alt="Imagen 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Conócenos y Video -->
+    <div class="container container-section">
+        <div class="row mb-6">
+            <!-- Conócenos -->
+            <div class="col-md-6 text-center">
+                <h2>Historia de <h2 style="font-family: 'Brush Script MT', cursive;">"La Delicia"</h2> </h2>
+                <p>
+                    Fundado en 1995, "La Delicia" comenzó como un pequeño restaurante familiar en el corazón de la
+                    ciudad. La visión de sus fundadores, María y José Rodríguez, era crear un lugar donde los comensales
+                    pudieran disfrutar de auténticos platos tradicionales elaborados con los ingredientes más frescos y
+                    de la más alta calidad. <br><br>
+                    <a href="templates/contacto.html" type="submit" class="btn btn-info">
+                        <i class="fas fa-envelope"></i> Contactanos</a>            
+            </div>
+            <!-- Video -->
+            <div class="col-md-6 text-center">
+                <div class="video-section">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WWAee9b4L2M?si=QMtyREhSekAGGJHs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background-color: #882fc3; color: white; text-align: center; font-size: 30px; font-family: 'Brush Script MT', cursive;" >Delicia 2024</footer>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

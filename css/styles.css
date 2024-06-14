@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Estilo básico para la barra de navegación */
+nav.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Asegura que esté por encima del resto del contenido */
+    transition: top 0.3s; /* Agrega una transición suave para una apariencia más agradable */
+}
+
+/* Estilo para ocultar la barra de navegación cuando se desplaza hacia abajo */
+.navbar.hidden {
+    top: -70px; /* Altura de la barra de navegación */
+}
+
